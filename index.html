@@ -247,6 +247,173 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/03/30/study-python-notes-1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="ChenYuPiao">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ChenYuPiao's">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2017/03/30/study-python-notes-1/" itemprop="url">
+                  Python学习notes（1）
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-03-30T16:35:49+08:00">
+                2017-03-30
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2017/03/30/study-python-notes-1/" class="leancloud_visitors" data-flag-title="Python学习notes（1）">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>最近在学python,看的廖大的python教程，想把学习期间的一些思考和遇到的问题记下来。</p>
+<h2 id="如何在Cpython调用自己写在文件里的函数"><a href="#如何在Cpython调用自己写在文件里的函数" class="headerlink" title="如何在Cpython调用自己写在文件里的函数"></a>如何在Cpython调用自己写在文件里的函数</h2><p>这个问题好像很小白- -但是谁还不是从小白过来的呢~</p>
+<ul>
+<li>首先cmd命令行进入你py文件所在的目录</li>
+<li>输入python进入交互环境，输入 import afunc (如果 afunc.py 是你的文件全名的话）<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p> import afunc</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</li>
+<li>接下来就可以调用你写在这个文件里的函数了<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>afunc.函数名(参数)</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</li>
+</ul>
+<h2 id="一条神奇的语句a-b-b-a-b"><a href="#一条神奇的语句a-b-b-a-b" class="headerlink" title="一条神奇的语句a,b=b,a+b"></a>一条神奇的语句a,b=b,a+b</h2><p>不知道你看着懵逼不，反正第一次见到它我是懵逼了，这是撒？逗号表达式嘛，显然不是啊。</p>
+<p>研究了半天发现其实这条语句是这样执行的(a=1,b=2)：</p>
+<pre><code>&gt;&gt;&gt;t=b,a+b
+&gt;&gt;&gt;t
+(2,3)
+&gt;&gt;&gt;a,b=t
+&gt;&gt;&gt;a
+2
+&gt;&gt;&gt;b
+3
+</code></pre><p>也就是说在a,b=b,a+b这个表达式中，首先将等号右边赋值给一个tuple元组，然后a,b分别被赋值了这个元组的相应元素。感觉就像是(a,b)=(b,a+b)。至于为什么是tuple而不是list，我想是为了保护数据不被修改吧，因为tuple规定了一旦赋值就不可修改~</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/03/29/diary-17-0329/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -620,7 +787,7 @@ hexo d
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-count">3</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -633,7 +800,7 @@ hexo d
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-count">4</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
