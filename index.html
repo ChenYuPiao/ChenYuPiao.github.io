@@ -335,16 +335,14 @@
       
         
           
-            <p>最近在学python,看的廖大的python教程，想把学习期间的一些思考和遇到的问题记下来。</p>
-<h2 id="如何在Cpython调用自己写在文件里的函数"><a href="#如何在Cpython调用自己写在文件里的函数" class="headerlink" title="如何在Cpython调用自己写在文件里的函数"></a>如何在Cpython调用自己写在文件里的函数</h2><p>这个问题好像很小白- -但是谁还不是从小白过来的呢~</p>
+            <p>　　最近在学python,看的廖大的python教程，想把学习期间的一些思考和遇到的问题记下来。</p>
+<h2 id="如何在Cpython调用自己写在文件里的函数"><a href="#如何在Cpython调用自己写在文件里的函数" class="headerlink" title="如何在Cpython调用自己写在文件里的函数"></a>如何在Cpython调用自己写在文件里的函数</h2><p>　　这个问题好像很小白- -但是谁还不是从小白过来的呢~</p>
 <ul>
 <li>首先cmd命令行进入你py文件所在的目录</li>
 <li>输入python进入交互环境，输入 import afunc (如果 afunc.py 是你的文件全名的话）<blockquote>
 <blockquote>
 <blockquote>
-<blockquote>
 <p> import afunc</p>
-</blockquote>
 </blockquote>
 </blockquote>
 </blockquote>
@@ -352,9 +350,7 @@
 <li>接下来就可以调用你写在这个文件里的函数了<blockquote>
 <blockquote>
 <blockquote>
-<blockquote>
 <p>afunc.函数名(参数)</p>
-</blockquote>
 </blockquote>
 </blockquote>
 </blockquote>
@@ -370,7 +366,7 @@
 2
 &gt;&gt;&gt;b
 3
-</code></pre><p>也就是说在a,b=b,a+b这个表达式中，首先将等号右边赋值给一个tuple元组，然后a,b分别被赋值了这个元组的相应元素。感觉就像是(a,b)=(b,a+b)。至于为什么是tuple而不是list，我想是为了保护数据不被修改吧，因为tuple规定了一旦赋值就不可修改~</p>
+</code></pre><p>　　也就是说在a,b=b,a+b这个表达式中，首先将等号右边赋值给一个tuple元组，然后a,b分别被赋值了这个元组的相应元素。感觉就像是(a,b)=(b,a+b)。至于为什么是tuple而不是list，我想是为了保护数据不被修改吧，因为tuple规定了一旦赋值就不可修改~</p>
 
           
         
